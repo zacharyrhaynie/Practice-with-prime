@@ -38,13 +38,11 @@ export default class extends Component {
 
     render() {
         return (
-            <div className="practiceDiv">
                 <form onSubmit={this.submitHandler}>
                     Number: <input onChange={this.changeHandler} required type="number" className="numberInput"/>
                     <input type="submit"/>
                     <p>{this.state.number}: is {this.ifEven()} it is {this.ifOdd()} and is {this.ifPrime()}</p>
                 </form>
-            </div>
         )
     }
 }
